@@ -1,0 +1,30 @@
+.titulo{
+    background-color: $color-titulo;
+}
+.noctambulo
+{display: flex;
+    &_texto{
+        background-color: $color-principal;
+    }
+    &_imagen {
+        background-color: $color-imagen;
+        width: 50vw;
+        @media screen and (max-width: 768px) { flex-direction: column;
+        width: 100vw;
+        }
+        &--gato {
+            border-radius: 200px;
+            @media screen and (max-width: 768px) { flex-direction: column;
+                width: 100%;
+        
+            }
+            &:hover {
+                transform: scale(110%);
+                transition: 1s;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) { flex-direction: column;
+        
+    }
+    }

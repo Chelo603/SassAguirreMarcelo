@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titulo {
+  background-color: #4D96FF;
+}
+
+.noctambulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.noctambulo_texto {
+  background-color: #FF6B6B;
+}
+
+.noctambulo_imagen {
+  background-color: #FFD93D;
+  width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+  .noctambulo_imagen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+}
+
+.noctambulo_imagen--gato {
+  border-radius: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .noctambulo_imagen--gato {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.noctambulo_imagen--gato:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .noctambulo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar {
+  background: black;
+  background: linear-gradient(159deg, black 0%, rgba(178, 194, 191, 0.908001) 37%, #040005 40%, #011013 100%);
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  font-size: 1.4rem;
+  margin: 10px 20px;
+}
+
+.navbar ul ul {
+  position: absolute;
+  display: none;
+}
+
+.navbar ul ul li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+ul li:hover ul {
+  display: block;
+}
+/*# sourceMappingURL=estilo.css.map */
